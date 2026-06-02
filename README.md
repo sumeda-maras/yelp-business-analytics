@@ -1,18 +1,28 @@
-elp Business Intelligence Platform
-Traffic Forecasting & Customer Review Analytics for Small Restaurants
-Problem
-Small restaurants and cafes often make staffing, inventory, and operational decisions based on intuition rather than data. Without access to the analytics resources used by large chains, they face challenges such as overstaffing, inventory waste, and limited insight into what drives customer satisfaction.
-Approach
-Analyzed the Yelp Academic Dataset, leveraging 10,000 businesses and 468,000+ reviews to develop predictive analytics tools for local food businesses. Engineered features capturing weekly seasonality, long-term demand trends, and customer sentiment across key categories including food quality, service, ambiance, value, and speed.
-Solution
-Built an ensemble forecasting model (Prophet + XGBoost) to predict daily customer traffic with 1.12 MAE, enabling data-driven staffing and inventory planning.
-Developed an NLP-based review classification model achieving 90% accuracy and 92% precision in identifying the primary drivers of 5-star reviews.
-Performed aspect-based sentiment analysis to quantify the impact of food, service, ambiance, value, and speed on customer satisfaction.
-Results
-The platform helps small businesses:
-Optimize staffing schedules based on predicted customer demand.
-Reduce inventory waste through more accurate traffic forecasting.
-Improve customer satisfaction by prioritizing factors most associated with positive reviews.
-Analysis revealed that food quality and service were the strongest predictors of 5-star ratings, while value and speed played secondary roles. By transforming Yelp data into actionable business insights, the project provides small businesses with analytics capabilities typically available only to larger restaurant chains.
-Skills Used
-Python, Pandas, NumPy, Scikit-learn, XGBoost, Prophet, NLP, Sentiment Analysis, Feature Engineering, Time Series Forecasting, Data Visualization, Predictive Modeling, Machine Learning
+Yelp Business Intelligence Platform
+
+Small restaurants and cafes often make staffing, inventory, and operational decisions based on intuition rather than data. Unlike large restaurant chains, they typically lack access to analytics tools that help optimize costs and improve customer satisfaction.
+This project uses the Yelp Academic Dataset to provide data-driven insights that help local businesses better understand customer behavior, predict demand, and identify what drives positive reviews.
+
+Restaurants face three common challenges:
+- Overstaffing or understaffing, leading to unnecessary labor costs
+- Inventory waste from inaccurate demand planning
+- Limited understanding of what factors influence customer satisfaction
+
+The goal was to build an affordable analytics solution that helps businesses make smarter operational decisions.
+
+Approach:
+1. Customer Traffic Forecasting
+Built a forecasting model to predict daily customer traffic using: Prophet, XGBoost
+Feature engineering for: Weekly patterns, Seasonal trends, Historical traffic behavior
+
+2. Review Analysis
+Developed an NLP pipeline to identify which aspects of the customer experience drive 5-star reviews.
+Analyzed mentions of: Food, Service, Ambience, Value, Speed, Results
+
+Traffic Prediction
+Ensemble Model: Prophet + XGBoost
+Mean Absolute Error (MAE): 1.12 check-ins
+
+Key finding:
+Food quality and service were the strongest drivers of 5-star reviews.
+Value and speed had a smaller impact on customer satisfaction.
