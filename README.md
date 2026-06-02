@@ -17,12 +17,4 @@ Feature engineering for: Weekly patterns, Seasonal trends, Historical traffic be
 
 2. Review Analysis
 Developed an NLP pipeline to identify which aspects of the customer experience drive 5-star reviews.
-Analyzed mentions of: Food, Service, Ambience, Value, Speed, Results
-
-Traffic Prediction
-Ensemble Model: Prophet + XGBoost
-Mean Absolute Error (MAE): 1.12 check-ins
-
-Key finding:
-Food quality and service were the strongest drivers of 5-star reviews.
-Value and speed had a smaller impact on customer satisfaction.
+Analyzed mentions of: Food, Service, Ambience, Value, Speed
